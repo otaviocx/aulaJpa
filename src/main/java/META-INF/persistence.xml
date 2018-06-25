@@ -1,0 +1,25 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+  version="2.1">
+
+  <persistence-unit name="test">
+    <description>Hibernate JPA Configuration</description>
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	
+	<class>br.edu.ifg.aulaJpa.Aluno</class>
+	
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://pellefant.db.elephantsql.com:5432/rxtqkusf" />
+      <property name="javax.persistence.jdbc.user" value="rxtqkusf" />
+      <property name="javax.persistence.jdbc.password" value="zHI3w9jxPHsYNdI7bMpLKLFquULVQj-5" />
+      <property name="hibernate.show_sql" value="true" />
+      <property name="hibernate.hbm2ddl.auto" value="create" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+    </properties>
+
+  </persistence-unit>
+
+</persistence>
