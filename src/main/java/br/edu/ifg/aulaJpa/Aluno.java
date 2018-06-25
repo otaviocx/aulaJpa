@@ -11,7 +11,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="tb_aluno", indexes= {@Index(columnList="matricula")})
+@Table(name="tb_aluno", indexes= {@Index(columnList="nome")})
 public class Aluno {
   
   @Id
